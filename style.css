@@ -1,29 +1,55 @@
+ 
   /* Giving our navbar some padding and a background color */
+   
   .navbar-brand {
     padding: 10px;
     font-size: 200%;
-    background: teal;
+    background: khaki;
     text-align: center;
     }
 
-    .jumbotron {
-        color: gray;
+    #headertextl {
         font-size: 120%;
-        text-align: Left;
-    }
-
-    .header-summary {
-        font-size: 120%;
-        text-align: center;
+        text-align: left;
         color: teal;
     }
 
-    #Visualizations {
-        font-size: 80%;
-        text-align: center;
-        color: teal;
-    }
+  #visualizations {
+      font-size: 80%;
+      text-align: center;
+      color: teal;
+  }
 
+  #top-image-left:hover {
+    outline-style: solid;
+    color: orangered;
+  }
+
+  #top-image-right:hover {
+    outline-style: solid;
+    color: orangered;
+  }
+
+  #bottom-image-left:hover {
+    outline-style: solid;
+    color: orangered;
+  }
+
+  #bottom-image-right:hover {
+    outline-style: solid;
+    color: orangered;
+  }
+
+  #compare-top {
+    color: teal;
+    text-align: center;
+  }
+
+  #compare-bottom {
+    color: teal;
+    text-align: center;
+  }
+  
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
 @media (max-width: 480px) {
     .navbar li {

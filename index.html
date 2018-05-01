@@ -7,17 +7,16 @@
   <title>Lattitude</title>
 
   <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -27,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://github.com/debbiechanca/Weather-Web/blob/master/index.html">Lattitude</a>
+            <a class="navbar-brand" href="./index.html">Lattitude</a>
           </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,16 +35,15 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization1%20Page/index.html">
-                  Max Temperature</a></li>
-                <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization2%20Page/index.html">Humidity</a></li>
-                <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization3%20Page/index.html">Cloudiness</a></li>
-                <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization4%20Page/index.html">Wind Speed</a></li>
+                <li><a href="./visual1.html">Max Temperature</a></li>
+                <li><a href="./visual2.html">Humidity</a></li>
+                <li><a href="./visual3.html">Cloudiness</a></li>
+                <li><a href="./visual4.html">Wind Speed</a></li>
               </ul>
             </li>
           
-            <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Comparison%20Page/index.html">Comparison</a></li>
-            <li><a href="https://github.com/debbiechanca/Weather-Web/blob/master/Data%20Page/index.html">Data</a></li>
+            <li><a href="./comparison.html">Comparison</a></li>
+            <li><a href="./data.html">Data</a></li>
 
           </ul>
         </div>
@@ -53,61 +51,64 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
-      <div class="col-sm-8">
-        <header class="header-summary">
-          <h1> Summary: Latitude vs. X</h1>
-        </header>
-        <hr>
-        <img id="landing-image" src="temperature.png" 
-        style="padding: 0 15px; float: left;" alt="Landing Image" width="250" height="250">
-        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-        
-        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
-        latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  
-        This site provides the source data and visualizations created as part of the analysis, as well 
-        as explanations and descriptions of any trends and correlations witnessed.
-      </div>
-      
-      <div class="col-sm-4">
-        <div id="Visualizations" class="container">
-            <h1> Visualizations</h1>        
-        <hr>
-        <div class="container">
-            <div class="col-md-6">
-              <a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization1%20Page/index.html">
-                <img target="plot1" src="temperature.png"
-                  alt="Visual1" width="200" height="200">
-                </a>  
+        <div id="header-row" class="row">
+            <div id="header-left" class="col-md-8 no-print">
+                <div id="headertextl">
+                    <h1> Summary: Latitude vs. X</h1>
+                    <hr>
+                </div>
+                <div id="Summary" class="row">
+                    <img id="landing-image" src="./temperature.png" 
+                    style="float: left;" alt="Landing Image" width="300" height="300">
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    </p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
+                    latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  
+                    This site provides the source data and visualizations created as part of the analysis, as well 
+                    as explanations and descriptions of any trends and correlations witnessed.
+                  </p>
+                </div>   
             </div>
-            
-            <div class="col-md-6">
-                <a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization2%20Page/index.html">
-                    <img target="plot2" src="humidity.png"  
-                    alt="Visual2" width="200" height="200">
-                  </a>  
-            </div>              
+            <div id="visuals" class="col-md-4 no-print">
+                <div id="visualizations">
+                    <h1> Visualizations</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                  <div id="top-image-left" class="col-md-6">
+                    <a href="./visual1.html">
+                      <img target="plot1" src="./temperature.png"
+                      alt="Visual1" width="200" height="200">
+                    </a> 
+                  </div>
+                  <div id="top-image-right" class="col-md-6">
+                    <a href="./visual2.html">
+                      <img target="plot2" src="./humidity.png"  
+                      alt="Visual2" width="200" height="200">
+                    </a>  
+                  </div>  
+                </div>
+                <hr>
+                <div class="row">
+                    <div id="bottom-image-left" class="col-md-6">
+                        <a href="./visual3.html">
+                          <img target="plot3" src="./cloudiness.png"  
+                          alt="Visual3" width="200" height="200">
+                        </a>   
+                    </div>
+                    <div id="bottom-image-right" class="col-md-6">
+                        <a href="./visual4.html">
+                          <img target="plot4" src="./wind.png" 
+                          alt="Visual4" width="200" height="200">
+                        </a>  
+                    </div>                     
+                </div>
+            </div>   
+  
         </div>
-        <hr>
-        <div class="container">
-            <div class="col-md-6">
-                <a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization3%20Page/index.html">
-                    <img target="plot3" src="cloudiness.png"  
-                    alt="Visual3" width="200" height="200">
-                  </a>   
-            </div>
-            
-            <div class="col-md-6">
-                <a href="https://github.com/debbiechanca/Weather-Web/blob/master/Visualization4%20Page/index.html">
-                    <img target="plot4" src="wind.png" 
-                    alt="Visual4" width="200" height="200">
-                  </a>  
-            </div>              
-        </div>
-        </div>
-      </div>
-    </div>
 
+    </div>
   </body>
 
 </html>

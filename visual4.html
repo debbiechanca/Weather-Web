@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Lattitude-Wind Speed</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- As a heading -->
+  <div class="container-fluid">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="./index.html">Lattitude</a>
+            </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./visual1.html">Max Temperature</a></li>
+                  <li><a href="./visual2.html">Humidity</a></li>
+                  <li><a href="./visual3.html">Cloudiness</a></li>
+                  <li><a href="./visual4.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            
+              <li><a href="./comparison.html">Comparison</a></li>
+              <li><a href="./data.html">Data</a></li>
+  
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+  <div id="header-row" class="row">
+    <div id="header-left" class="col-md-8 no no-print">
+        <div id="headertextl">
+        <h1> Wind Speed</h1>
+        </div>
+        <hr>
+        <img id="Wind Image" src=".\wind.png" 
+        alt="Wind Image" width="750" height="500">
+        <p>Reviewing the scatter plot for the wind speed vs. laltitude, 
+            there’s less wind near the equator and more as one goes further out.</p>
+      </div>
+
+      <div id="visuals" class="col-md-4 no-print">
+            <div id="visualizations">
+                <h1> Visualizations</h1>
+                <hr>
+            </div>
+            <div class="row">
+              <div id="top-image-left" class="col-md-6">
+                <a href="./visual1.html">
+                  <img target="plot1" src="./temperature.png"
+                  alt="Visual1" width="200" height="200">
+                </a> 
+              </div>
+              <div id="top-image-right" class="col-md-6">
+                <a href="./visual2.html">
+                  <img target="plot2" src="./humidity.png"  
+                  alt="Visual2" width="200" height="200">
+                </a>  
+              </div>  
+            </div>
+            <hr>
+            <div class="row">
+                <div id="bottom-image-left" class="col-md-6">
+                    <a href="./visual3.html">
+                      <img target="plot3" src="./cloudiness.png"  
+                      alt="Visual3" width="200" height="200">
+                    </a>   
+                </div>
+                <div id="bottom-image-right" class="col-md-6">
+                    <a href="./visual4.html">
+                      <img target="plot4" src="./wind.png" 
+                      alt="Visual4" width="200" height="200">
+                    </a>  
+                </div>                     
+            </div>
+        </div>   
+    </div>
+</div>
+  </body>
+
+</html>
